@@ -1,4 +1,4 @@
-:root.theme-dark {
+.page.theme_dark {
   --title-color: #db00ff;
   --text-primary: #ff0070;
   --text-secondary: #f1b2ce;
@@ -15,4 +15,33 @@
   --text-weight-bold: 700;
   --border-color: #ff0070;
   --border-color-hover: rgba(255, 0, 112, 0.4);
+
+  .decorative-marker {
+    visibility: visible;
+  }
+
+  .decorative-marker::after {
+    visibility: visible;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --title-color: #db00ff;
+    --text-primary: #ff0070;
+    --text-secondary: #f1b2ce;
+    --text-default: #000028;
+    --bg-primary: #000028;
+    --bg-secondary: #ff0070;
+    --shadow-primary: #ff0070;
+    --bg-image: url("../images/cover-image-dark.png");
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --font: "IBM Plex Mono", monospace;
+    --text-size: 18px;
+    --title-size: 116px;
+    --text-weight-normal: 400;
+    --text-weight-bold: 700;
+    --border-color: #ff0070;
+    --border-color-hover: rgba(255, 0, 112, 0.4);
+  }
 }

@@ -70,9 +70,10 @@
   position: relative;
   display: grid;
   grid-template-rows: 0 1fr min-content 1fr;
-  min-block-size: 100vh;
+  min-block-size: 668px;
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 100vh;
 }
 
 .header__theme-menu {
@@ -94,10 +95,13 @@
   font-weight: var(--text-weight-normal);
   line-height: 18px;
   text-transform: lowercase;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
   border: 1px solid var(--border-color);
+  cursor: pointer;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -114,7 +118,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 13px;
+  gap: 10px;
 }
 
 .header__title {
@@ -134,7 +138,6 @@
   height: fit-content;
   align-self: center;
   justify-self: flex-end;
-  margin: 56px 0px;
 }
 
 .header__subtitle-text {
@@ -220,7 +223,7 @@
 }
 
 .article-item__link:hover {
-  border-bottom: 1px solid var(--text-primary);
+  border-bottom: 1px solid var(--text-secondary);
 }
 
 .article-item__link:focus {
@@ -229,7 +232,7 @@
 
 .article-item__link:focus-visible {
   display: inline-block;
-  outline: 1px solid var(--text-primary);
+  outline: 1px solid var(--text-secondary);
 }
 
 .section__images {
@@ -269,6 +272,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-block-size: 668px;
   height: 100vh;
   justify-content: center;
 }
@@ -302,6 +306,7 @@
   }
 
   .header {
+    min-block-size: 1024px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -313,7 +318,6 @@
 
   .header__subtitle {
     width: 50%;
-    margin: 162px 0px;
   }
 
   .header__theme-menu {
@@ -389,6 +393,7 @@
   }
 
   .footer {
+    min-block-size: 1024px;
     margin-top: 60px;
   }
 }
@@ -396,6 +401,7 @@
 @media (width >= 1024px) {
   .header {
     margin-bottom: 35px;
+    min-block-size: 768px;
   }
 
   .header__title {
@@ -408,10 +414,6 @@
     justify-self: center;
     align-self: flex-start;
     margin-top: 0;
-  }
-
-  .header__subtitle {
-    margin: 114px 0px;
   }
 
   .header__theme-menu-list {
@@ -437,6 +439,7 @@
   }
 
   .footer {
+    min-block-size: 768px;
     align-items: center;
     justify-content: center;
   }
