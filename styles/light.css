@@ -8,11 +8,6 @@
   --shadow-primary: #ff8dcb;
   --bg-image: url("../images/cover-image-light.png");
   --hover-color: rgba(255, 0, 112, 0.4);
-  --font: "IBM Plex Mono", monospace;
-  --text-size: 18px;
-  --title-size: 116px;
-  --text-weight-normal: 400;
-  --text-weight-bold: 700;
   --border-color: #353430;
   --border-color-hover: rgba(50, 49, 45, 0.4);
 
@@ -36,11 +31,6 @@
     --shadow-primary: #ff8dcb;
     --bg-image: url("../images/cover-image-light.png");
     --hover-color: rgba(255, 0, 112, 0.4);
-    --font: "IBM Plex Mono", monospace;
-    --text-size: 18px;
-    --title-size: 116px;
-    --text-weight-normal: 400;
-    --text-weight-bold: 700;
     --border-color: #353430;
     --border-color-hover: rgba(50, 49, 45, 0.4);
   }
