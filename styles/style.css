@@ -254,9 +254,7 @@
 
 .images__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
 
@@ -300,7 +298,6 @@
   }
 
   .container {
-    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -405,8 +402,7 @@
   }
 
   .header__title {
-    --title-size: 157px;
-    font-size: var(--title-size);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-top: 0;
   }
 
@@ -445,7 +441,6 @@
   }
 
   .footer__title-text {
-    --title-size: 157px;
-    font-size: var(--title-size);
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
